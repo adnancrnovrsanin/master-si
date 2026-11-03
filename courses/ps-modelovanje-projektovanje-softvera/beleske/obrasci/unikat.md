@@ -89,6 +89,16 @@ public class Main {
 - **Flyweight**: Flyweight fabrika vraća deljene objekte različitih ključeva (kao Multiton), ali deli nepromenljivo unutrašnje stanje radi štednje memorije.
 - **Prototype**/**Abstract Factory**: fabrike često jesu Unikati (jedna fabrika po porodici), vidi `apstraktna-fabrika.md`.
 
+## Slajdovi predavanja (PS_full_2026.pdf, str. 15–21)
+
+- Motivacija (str. 16): `Scheduler` u jezgru OS, `DBManager`. Zahtev: instanca je propisno inicijalizovana i sigurno postoji pri prvom pristupu, ne može se napraviti više instanci, lako je dostupna. Globalni statički objekat ne daje garanciju inicijalizacije ni enkapsulacije.
+- Namena (str. 17): objektni obrazac pravljenja; jedna instanca + globalna pristupna tačka; instanca treba da bude **proširiva nasleđivanjem** pa klijenti koriste izvedenu klasu bez izmena.
+- Struktura (str. 18): atribut `_instance`, statička operacija `instance()`, **zaštićen** (`protected`) konstruktor; učesnik je samo Singleton (Scheduler).
+- Implementacija (str. 19–20): Java verzija sa slajda je **eager** (`private static instance = new Scheduler;`, pristup `Scheduler.instance().put(...)`), C++ preporuka je lokalni statički objekat u `instance()` (inicijalizuje se pri prvom pristupu).
+- Posledice (str. 21): kontrola pristupa (npr. parametri `instance()`), manje opterećenje globalnog prostora imena, može se nasleđivati i konfigurisati u izvršavanju, moguć je kontrolisan broj instanci (Multiton), fleksibilnije nego uslužna klasa sa statičkim operacijama (one ne mogu biti polimorfne).
+
+**Razlika u notaciji (slajdovi / vežbe):** slajdovi `instance()`, zaštićen konstruktor, eager; vežbe `getInstance()`, privatan konstruktor, lenja inicijalizacija, plus Multiton i thread-safe varijanta. Obe varijante su "tačne"; ako se traži nasleđivanje instance, konstruktor mora biti `protected`. Slajdovi ne pominju Multiton ni double-checked locking (to je samo sa vežbi).
+
 ## Pojavljivalo se na K1
 
 - Kao pomoćni uzorak u gotovo svakom zadatku sa vežbi (HAL = Fasada + Unikat + adaptirana klasa; Panel i PanelStateLog; StockService).

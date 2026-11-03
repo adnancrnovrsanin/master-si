@@ -43,3 +43,10 @@ Napravi po jednu belešku po uzorku: namena, struktura (UML), učesnici, kad se 
 - **Prvi K1:** termin određuje Milićev, a raspored zavisi od toga da li RTI i SI imaju iste propozicije. Za SI je 2 kolokvijuma.
 - **Ispit (januar/februar 2026., iz sećanja studenata):** vidi [zadaci/ispit-februar-2026-iz-secanja.md](zadaci/ispit-februar-2026-iz-secanja.md). Za K1 su relevantni samo zadaci 1 i 2 (obrasci).
 - Google Drive PDF sa rezimeom obrazaca (`psi_design_patterns.pdf`), nepregledan: https://drive.google.com/file/d/1qCDXS6ackkQPy7T8BNPMPpSBvBHaLYJr/view
+
+## Potvrđeno iz slajdova 2026 (`materijali/predavanja/PS_full_2026.pdf`)
+
+- K1 je **projektni obrasci**, K2 UML (strana 6 slajdova). Kolokvijumi su neobavezni (lab vežbe), svaki 20%, rade se pojedinačno. K1 je u prvoj kolokvijumskoj nedelji na SI, nadoknada sa K2.
+- Slajdovi obrađuju **16 obrazaca** (strane 15–99): Unikat/Singleton, Fasada, Strategija, Šablonski metod, Fabrička metoda, Prototip, Apstraktna fabrika, Komanda, Adapter, Dekorater, Posmatrač, Zastupnik, Sastav/Composite, Muva/Flyweight, Podsetnik/Memento, Graditelj/Builder.
+- **State, Bridge, Visitor, Iterator, Mediator, Chain of Responsibility i Interpreter se ne pojavljuju kao obrasci u slajdovima.** Student iz grupe je rekao da je na vežbama bio "most" (Bridge), a u PDF-u vežbi ga nema. Proveri na sledećim vežbama.
+- Beleške po obrascu: `beleske/obrasci/`, pregled: `beleske/K1-pregled-obrazaca.md`, analiza starih K1: `zadaci/analiza-K1.md`, vežbanje: `zadaci/vezbanje.md` (rešenja u `vezbanje-resenja.md`).

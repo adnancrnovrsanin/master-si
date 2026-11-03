@@ -73,6 +73,10 @@ public class Main {
 - **Strategy**: na vežbama (diskusija zadatka 7) se galerija može posmatrati kao strategija pravljenja tekstura za nivo.
 - **Builder**: Builder gradi jedan složen objekat korak po korak, Apstraktna fabrika vraća odmah gotove proizvode više vrsta.
 
+## Slajdovi predavanja
+
+Apstraktna fabrika **nema svoje slajdove** u PS_full_2026.pdf; pominje se samo usput na str. 60 (Prototip: "slično kao i Apstraktna fabrika i Fabrička metoda, čini klijente nezavisnim od vrste objekata koji se prave"). Gradivo je dakle samo sa vežbi (zadaci 5 i 7). Uloge i nazivi su stoga sa vežbi; na slajdovima nema drugačije notacije.
+
 ## Pojavljivalo se na K1
 
 - Nije bilo eksplicitno traženo ni na jednom K1 u materijalu. Na K1P 2024/25 z2 (note Piano/Forte, "parametrizuje se da koristi ili Piano ili Forte") fabrika po vrsti nota je prirodna uz Flyweight, ali zvanično rešenje nije dostupno (nepotvrđeno).

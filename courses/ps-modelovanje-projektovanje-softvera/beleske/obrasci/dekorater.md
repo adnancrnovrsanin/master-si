@@ -90,6 +90,16 @@ Kolokvijumski oblik (K1 2025/26 z1): `AudioStream { double[] getSamples(); }` je
 - **Strategy**: Strategy menja "utrobu" objekta, Dekorater menja "kožu" (obmotava spolja).
 - **Template Method**: wiki sažetak za K1 2024 navodi da može da pomogne u baznoj klasi filtera; nije potvrđeno u zvaničnom rešenju.
 
+## Slajdovi predavanja (PS_full_2026.pdf, str. 78–84)
+
+- Motivacija (str. 79–80): grafički elementi (`VisualComponent`, `TextView`) ukrašeni ramom (`BorderDecorator`) i klizačem (`ScrollDecorator`) u proizvoljnim kombinacijama; dekorater zadovoljava isti interfejs pa je transparentan klijentu.
+- Namena (str. 81): "pridodati odgovornosti objektu dinamički; fleksibilna alternativa izvođenju klasa". Drugi naziv: **Omotač (Wrapper)**. Primenljivo i kad se odgovornosti moraju moći izbaciti i kad je klasa nedostupna za izvođenje.
+- Struktura (str. 82): Component, ConcreteComponent, Decorator, ConcreteDecorator (primer: VisualComponent, TextView, Decorator, BorderDecorator/ScrollDecorator).
+- Implementacija (str. 83): obe klase moraju imati istu osnovnu klasu; apstraktni `Decorator` može da se izostavi ako postoji samo jedan konkretni dekorater; interfejs komponente držati što užim. **Dekorater menja "kožu", Strategija "utrobu"**: kod Strategije osnovni objekat je napred i delegira strategiji iza sebe, kod Dekoratera je osnovni objekat iza i maskiran; strategija može imati sasvim drugačiji interfejs, dekorater ne sme da menja interfejs; klijenti ne znaju za strategiju, ali ni klijent ni osnovni objekat ne znaju za dekoratere.
+- Posledice (str. 84): veća fleksibilnost od izvođenja; ista odgovornost se može dodati više puta; odgovornosti se grade inkrementalno; mnogo malih objekata.
+
+**Razlika u notaciji (slajdovi / vežbe):** slajdovi koriste GoF nazive (Component, ConcreteComponent, Decorator, ConcreteDecorator); vežbe Komponenta, **Subjekat** (= ConcreteComponent), **Dopuna** (= Decorator), Konkretna dopuna (= ConcreteDecorator). Za z1.txt na kolokvijumu je bezbedno napisati oba naziva (npr. "Subjekat (ConcreteComponent)").
+
 ## Pojavljivalo se na K1
 
 - K1 2024/25 (27.10.2024.) z1: filteri slike (Greyscale, Invert) nad nizom `Pixel`.

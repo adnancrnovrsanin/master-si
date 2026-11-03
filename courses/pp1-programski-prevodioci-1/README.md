@@ -64,3 +64,11 @@ Alati: JFlex (leksika), CUP (parser), Mikrojava (jezik za projekat).
 Preuzeto u `materijali/`: `predavanja/`, `vezbe/`, `knjige/` (zbirka), `kolokvijumi/`. Udžbenik je `predavanja/pp1_udzbenik.pdf`. Arhive `.rar` treba otpakovati (`brew install unar`, pa `unar fajl.rar`).
 
 Eksterno: Box folder sa rešenjima, YouTube lista rešenja zadataka, Google Sheet sa pitanjima po temama (u [resources/sajtovi.md](../../resources/sajtovi.md)).
+
+## Beleške i vežbanje (napravljeno)
+
+- `beleske/01..07`: leksika i automati, konačni procesori, gramatike, potisni automati, LR(0)/SLR(1)/LALR(1), oporavak od grešaka, FIRST/FOLLOW/LL(1)/rekurzivni spust. `beleske/K1-cheatsheet.md`: svi recepti na jednom mestu.
+- `zadaci/vezbanje.md`: 12 zadataka po 10 poena (rešenja u `vezbanje-resenja.md`). `zadaci/analiza-starih-K.md`: šta se tražilo po godinama.
+- Primere su proveravane skriptama (regex, automati, LR tabele, simulacije), ali zvanična skenirana rešenja nisu čitana.
+
+Nejasnoće: K 2019 zadatak 3 ima dvosmislenu gramatiku (`A → A d A`), pa LL(1) transformacija nije moguća i odgovor je "nije moguće". K 2021/22 zadatak 3b (`cadbadbdacacb`, sigurni b i d): po agentovoj simulaciji greška se otkriva tek na kraju ulaza i oporavak ne uspeva, a zvaničnog rešenja nema. Slajd P08 str. 56 ima štamparsku grešku (`'}'` umesto `')'`).

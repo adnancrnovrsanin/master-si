@@ -79,6 +79,17 @@ Drugi primer sa vežbi (zadatak 8): `MemFragment.clone()` se koristi u `Process.
 - **Memento**: Memento čuva stanje radi vraćanja, Prototype radi pravljenja novog nezavisnog objekta.
 - **Composite/Decorator**: prototipovi se često kombinuju sa njima da se složeni objekti kopiraju.
 
+## Slajdovi predavanja (PS_full_2026.pdf, str. 54–60)
+
+- Motivacija (str. 55–56): editor notnog zapisa u generičkom okviru za grafičke editore; `GraphicTool` mora da pravi konkretne note (`WholeNote`, `HalfNote`) iako ih okvir ne poznaje. Fabrička metoda bi tražila po jednu podklasu `GraphicTool` za svaki simbol (previše klasa), pa `GraphicTool` drži prototipski objekat (`proto`) i klonira ga (`proto->clone()`).
+- Namena (str. 57): "odrediti vrstu objekta koji se pravi prototipskom instancom i praviti objekte njenim kopiranjem". Primenljivo: klasa se određuje u izvršavanju; izbegavanje paralelnih hijerarhija; objekti iste klase različito konfigurisani.
+- Struktura (str. 58): Client, Prototype (`clone()`), ConcretePrototype1/2 ("return copy of self"). Primer: Client = GraphicTool, Prototype = Graphic, ConcretePrototype = WholeNote/HalfNote.
+- Implementacija (str. 59): zamena za refleksiju; **registar (menadžer) prototipova** ako broj prototipa varira; ključni deo je `clone` (duboko kopiranje, cirkularne reference, može se iskoristiti serijalizacija); `clone` može imati parametre.
+- Posledice (str. 60): kao Apstraktna fabrika i Fabrička metoda čini klijente nezavisnim od vrste objekata, ali kloniranjem umesto izvođenjem; prototipovi se dodaju dinamički; manje podklasa; efekat "dinamičkog dodavanja klase".
+- Str. 66: Command + Prototype (komanda koja čuva stanje pravi se kopiranjem prototipa).
+
+**Razlika u notaciji (slajdovi / vežbe):** isti učesnici (Client, Prototype, ConcretePrototype = Klijent, Prototip, Konkretan prototip). Na slajdovima je motivacija Prototype vs Factory Method (notni simboli), na vežbama Prototype kao način realizacije Apstraktne fabrike (zadatak 5) i kloniranje memorije (zadatak 8).
+
 ## Pojavljivalo se na K1
 
 - Samo kao teorija (višestruki izbor) na starim K1: 2021 (zadatak 8), 2022 (zadatak 8), 2023 (zadatak 8), probni testovi 2021 (zadatak 9, odgovor 3). Prema wiki sažetku teme su: metoda kopiranja i registar, klijent ne mora da zna konkretne prototipe, dodavanje u izvršavanju, kombinovanje sa Composite, "klasni ili objektni" uzorak (objektni).

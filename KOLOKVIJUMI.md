@@ -14,8 +14,8 @@ Na vrhu servisa se vidi i red za K2 sa datumima 14.12.2026., 18.12.2026., 16.01.
 
 | Predmet | Šta ulazi u K1 | Pouzdanost |
 |---|---|---|
-| Modelovanje i projektovanje softvera | Prvi blok: projektni uzorci (design patterns), svi uzorci sa predavanja i vežbi | Potvrđeno na sajtu ps.etf.bg.ac.rs i SI Wiki |
-| Inteligentni servisi i sistemi | Verovatno prvi blok: pretraživanje i problemi zadovoljenja ograničenja (CSP) | **Pretpostavka** sa SI Wiki, potvrdi kod asistenata |
+| Modelovanje i projektovanje softvera | Prvi blok: projektni uzorci (design patterns), svi uzorci sa predavanja i vežbi | Potvrđeno na sajtu, SI Wiki i slajdovima 2026 (16 obrazaca, str. 15–99) |
+| Inteligentni servisi i sistemi | Pretraživanje + CSP. Igre i neizvesno okruženje su K2, ML je K3 | Potvrđeno u slajdu 3 `0_Uvod.pdf` (SI plan i program) |
 | Programski prevodioci 1 | IR (13E): jedan kolokvijum K, 30 poena. Prošle godine: predavanja do P8 bez P7/P7a, vežbe V1–V6 (leksika, sintaksa, bottom-up, CUP, top-down) | **Prošlogodišnje obaveštenje**, potvrdi kod asistenata. Detalji u README predmeta |
 
 ## Plan spremanja (predlog, prilagodi svom vremenu)
@@ -24,9 +24,9 @@ Termini su zbijeni: IS sreda 25.11., PS četvrtak 26.11., PP1 subota 28.11. PP1 
 
 | Period | PP1 | PS | IS |
 |---|---|---|---|
-| 4–10.11. | Regex → DKA (metoda pozicija, Tompson), minimizacija, konačni procesori, pisanje gramatika | Strukturni obrasci (Composite, Bridge, Decorator, Adapter, Facade, Proxy) | Pretraživanje (BFS/DFS/UCS/A*), heuristike |
-| 11–17.11. | Potisni automati, LR(0), SLR(1), LALR(1) | Ponašajni obrasci (Strategy, State, Observer, Command, Template Method...) | CSP |
-| 18–23.11. | FIRST/FOLLOW, LL(1), rekurzivni spust, oporavak od grešaka; prvi stari K na vreme (90 min) | Kreacioni obrasci, razlike između sličnih uzoraka, stari K1 | Igre (Nešov ekvilibrijum, minimax) |
+| 4–10.11. | Regex → DKA (metoda pozicija, Tompson), minimizacija, konačni procesori, pisanje gramatika | Strukturni obrasci (Composite, Decorator, Adapter, Facade, Proxy, Flyweight) | Pretraživanje (BFS/DFS/UCS/A*), heuristike |
+| 11–17.11. | Potisni automati, LR(0), SLR(1), LALR(1) | Ponašajni obrasci (Strategy, Observer, Command, Template Method, Memento) | CSP |
+| 18–23.11. | FIRST/FOLLOW, LL(1), rekurzivni spust, oporavak od grešaka; prvi stari K na vreme (90 min) | Kreacioni obrasci (Singleton, Factory Method, Abstract Factory, Prototype, Builder), razlike između sličnih uzoraka, stari K1 | Vežbanje pretraživanja i CSP (`zadaci/vezbanje.md`), cheat sheet |
 | 24.11. | Jedan zadatak po temi | Stari K1 | Stari rokovi, cheat sheet |
 | 25.11. | IS K1 (uveče pregled PS) | | |
 | 26.11. | PS K1 | | |
@@ -43,4 +43,6 @@ Napomene:
 - [x] Materijali preuzeti (PP1, IS, PS)
 - [ ] Potvrditi gradivo K1 kod asistenata (PP1, IS)
 - [ ] PS slajdovi 2026 u `materijali/predavanja/`
-- [ ] Beleške i vežbanje po predmetu (u izradi)
+- [x] Beleške i vežbanje: PP1, IS, PS (K1 gradivo)
+- [ ] Ja radim: PP1 K1 cheat sheet, zadaci iz vezbanje.md, stari K na vreme
+- [ ] Ja radim: IS K1 cheat sheet i vezbanje.md; PS K1-pregled-obrazaca.md i vezbanje.md

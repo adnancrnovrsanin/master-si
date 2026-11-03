@@ -78,6 +78,17 @@ Napomena sa vežbi: u originalu je lista pitanja prazna posle prvog poziva `disp
 - **Command**: Command enkapsulira zahtev sa primaocem i parametrima (može se čuvati, stavljati u red, poništiti), Strategy enkapsulira algoritam.
 - **Policy / politika** u K1 2025/26: politika pristupa (korisnička, direktorijumska) je Strategija koju drži zastupnik; ne treba je mešati sa samim zastupnikom.
 
+## Slajdovi predavanja (PS_full_2026.pdf, str. 28–38)
+
+- Motivacija (str. 29–31): prelom teksta u redove (`Composition`/`Compositor` sa `SimpleCompositor`, `TeXCompositor`, `ArrayCompositor`); generatori slučajnih brojeva za TSS (`RndGenerator`, `UniformGenerator`, `NormalGenerator`).
+- Namena (str. 32): familija algoritama, enkapsulirani i zamenjivi. **Drugi naziv: Politika (Policy)**. Primenljivost: klase se razlikuju samo po ponašanju; varijante istog zadatka (vreme/memorija); algoritam koristi podatke koji klijentu ne trebaju; klasa ima uslovno grananje (strategija izdvaja grane u potklase).
+- Struktura (str. 33–34): `Context` (drži `strategy`), `Strategy` (`algorithm()`), `ConcreteStrategyA/B/C`. Konfiguracija spolja (injekcija zavisnosti).
+- Implementacija (str. 37): dve varijante prenosa podataka: kontekst šalje sve kao parametre, ili šalje referencu na sebe (`this`) pa strategija zove njegov interfejs; strategija može biti opciona (podrazumevano ponašanje).
+- Posledice (str. 38): eliminiše uslovna grananja; alternativa izvođenju klasa konteksta; više objekata, ali se stateless strategije mogu deliti (Flyweight).
+- Str. 83: poređenje sa Dekoraterom ("utroba" vs "koža"), vidi `dekorater.md`.
+
+**Razlika u notaciji (slajdovi / vežbe):** isti nazivi (Context/Strategy/ConcreteStrategy = Kontekst/Strategija/Konkretna strategija). Slajdovi dodaju naziv "Politika (Policy)", što direktno objašnjava zašto se u K1 2025/26 z2 "politike pristupa" rešavaju Strategijom.
+
 ## Pojavljivalo se na K1
 
 - K1 2024/25 z2 (poker): `Player` ima `aggressive` zastavicu i `if/else` u `update()` (strategija klađenja), a `Croupier.defineWinner()` ima komentar da treba više taktika određivanja pobednika (druga strategija). Dakle dve strategije u istom zadatku. Uz Unikat i Posmatrač (tekst zadatka ne imenuje uzorke).
