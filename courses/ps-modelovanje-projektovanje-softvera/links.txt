@@ -1,0 +1,18 @@
+# folder|url|[ime fajla]  -- pokreni: scripts/fetch.sh ps [k1|k2]
+# slajdovi predavanja su direktorijum na afrodita.rcub.bg.ac.rs, skini rucno (vidi README)
+k1|https://ps.etf.bg.ac.rs/materijali/K1/Vezbe_PS_ProjektniUzorci.pdf
+k1|https://ps.etf.bg.ac.rs/materijali/K1/Vezbe_PS_ProjektniUzorci_Kodovi.zip
+k1|https://ps.etf.bg.ac.rs/rokovi/PS_2025_26_K1.pdf
+k1|https://ps.etf.bg.ac.rs/rokovi/pocetni_sadrzaj_k1_2025_26.zip
+k1|https://ps.etf.bg.ac.rs/rokovi/PS_2025_26_K1P.pdf
+k1|https://ps.etf.bg.ac.rs/rokovi/pocetni_sadrzaj_k1p_2025_26.zip
+k1|https://ps.etf.bg.ac.rs/rokovi/PS_2024_25_K1.pdf
+k1|https://ps.etf.bg.ac.rs/rokovi/pocetni_sadrzaj_k1_2024_25.zip
+k1|https://ps.etf.bg.ac.rs/rokovi/PS_2024_25_K1P.pdf
+k1|https://ps.etf.bg.ac.rs/rokovi/pocetni_sadrzaj_k1p_2024_25.zip
+k2|https://ps.etf.bg.ac.rs/materijali/K2/Vezbe_PS_UML.pdf
+k2|https://ps.etf.bg.ac.rs/materijali/K2/StarUML_Keyboard_Shortcuts.pdf
+k2|https://ps.etf.bg.ac.rs/rokovi/PS_K2_2025.zip
+k2|https://ps.etf.bg.ac.rs/rokovi/PS_K2P_2025.zip
+k2|https://ps.etf.bg.ac.rs/rokovi/PS_K2_2024.zip
+k2|https://ps.etf.bg.ac.rs/rokovi/PS_K2P_2024.zip

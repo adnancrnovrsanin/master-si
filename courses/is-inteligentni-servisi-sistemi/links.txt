@@ -1,0 +1,35 @@
+# folder|url|[ime fajla]  -- pokreni: scripts/fetch.sh is [folder]
+# domaci zadaci iz proslih godina nisu ukljuceni (http://ri4es.etf.rs/projekat.html)
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P1_Uvod.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P2_Pretrazivanje.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P3_Strategije_pretrazivanja.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P4_Igre.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P5_Produkcioni_sistemi.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P6_Neizvesno_okruzenje.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P7_CSP.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P8_Strategije_resavanja_problema.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P9_Indukcioni_sistemi.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P10_Masinsko_ucenje.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P11_K_najblizih_suseda.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P12_K-means.pdf
+predavanja|http://ri4es.etf.rs/materijali/predavanja/IS_P13_Učenje_sa_podrškom.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/0_Uvod.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/1_Prostor_i_algoritmi_pretraživanja.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/2_Metodi_zadovoljenja_ograničenja.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/3_Teorija_igara_simultane_igre.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/4_Teorija_igara_sekvencijalne_igre.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/5_Uvod_u_mašinsko_učenje.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/6_Stabla_odlučivanja.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/7_Linearna_i_logistička_regresija.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/8_Nenadgledano_mašinsko_učenje.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/IS_Pandas.pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/IS_Linearna_regresija_(Python).pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/IS_Stabla_odlucivanja_(Python).pdf
+vezbe|http://ri4es.etf.rs/materijali/vezbe/IS_Logisticka_regresija_(Python).pdf
+knjige|http://ri4es.etf.rs/materijali/zbirka/ES-2013.pdf
+vezbe/dodatni_materijali|http://ri4es.etf.rs/materijali/vezbe/dodatni_materijali/cakes.csv
+vezbe/dodatni_materijali|http://ri4es.etf.rs/materijali/vezbe/dodatni_materijali/exam_pass.csv
+vezbe/dodatni_materijali|http://ri4es.etf.rs/materijali/vezbe/dodatni_materijali/exam_pass_test.csv
+vezbe/dodatni_materijali|http://ri4es.etf.rs/materijali/vezbe/dodatni_materijali/house_prices_test.csv
+vezbe/dodatni_materijali|http://ri4es.etf.rs/materijali/vezbe/dodatni_materijali/house_prices_train.csv
+vezbe/dodatni_materijali|http://ri4es.etf.rs/materijali/vezbe/dodatni_materijali/titanic_train.csv

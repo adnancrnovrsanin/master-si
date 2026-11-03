@@ -1,0 +1,8 @@
+.DS_Store
+
+# sirovi materijali sa sajtova predmeta (ponovo se preuzimaju skriptom)
+courses/*/materijali/*
+!courses/*/materijali/.gitkeep
+
+# claude / lokalno
+.claude/settings.local.json
