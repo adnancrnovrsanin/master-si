@@ -394,6 +394,8 @@ Rad za `id ( id + id ) + id`:
 3. B → f S c
 4. B → ε
 
+**Pažnja na numeraciju:** u originalnom zadatku smene su numerisane 1, 2, 4, 5 (broj 3 je preskočen: `4. B → f S c`, `5. B → ε`), pa su tamo `REDUCE(4)` za B → f S c i `REDUCE(5)` za B → ε, a redosled primenjenih smena je 1, 2, 4, 1, 2, 5. Ovde su renumerisane 1–4. Na kolokvijumu uvek koristi brojeve iz teksta zadatka.
+
 Pitanje (a): da li se `fcffcfcf` prepoznaje? **Da.** Izvođenje: `S ⇒ f A f ⇒ f c B f ⇒ f c f S c f ⇒ f c f f A f c f ⇒ f c f f c B f c f ⇒ f c f f c f c f` (B → ε u poslednjem koraku; proveren brojač izvođenja: tačno 1 stablo).
 
 | neterminal | poništiv | FIRST | FOLLOW |

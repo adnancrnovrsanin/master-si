@@ -35,6 +35,8 @@ Registri: `R` (rezultat do sada, početno 0), `N` (tekući broj), `O` (poslednji
 | B | `N := N*10 + val(c)` | `R := R O N; O := '+'`, → C | `R := R O N; O := '-'`, → C | `R := R O N; O := '*'`, → C | `R := R O N; O := '/'`, → C | `R := R O N`, ACCEPT, rezultat je `R` |
 | C | `N := val(c)`, → B | | | | | |
 
+**Format na kolokvijumu (po skeniranom rešenju):** list ima dva odvojena polja, "finalni automat bez akcija" (tabela prelaza + kolona prihvatanja) i "akcije koje odgovaraju prelazima" (tabela iste veličine sa `ak1`, `ak2`...), pa ispod napiši šta svaka akcija radi. Upiši i pretpostavku "prazna sekvenca se ne prihvata" (ovde stanje A na `─┤` je greška). Studentsko rešenje je koristilo 7 stanja (po jedno za svaki operator, A–G: `c+((+|-|*|/)c+)*`), a ovo ovde 3 stanja uz registre. Oba su tačna, ali manji automat znači manje posla.
+
 Prazna polja su greške (npr. izraz počinje operatorom ili se završava operatorom). `R O N` znači "primeni operator `O` na `R` i `N`". **Pretpostavka (uokviriti na K):** deljenje je celobrojno, a `N = 0` pri deljenju je greška. Provera na `15+35*50`: `R:=0+15=15`, pa `15+35=50`, pa `50*50=2500`. Proverio sam implementacijom (State pattern, ispod) na `15+35*50`, `100/7/2 = 7`, `9-10*2 = -2`, `2*3-4 = 2`, a `1+`, `+1`, `8/0` se odbijaju.
 
 Implementacija State patternom (Java, kompajlirano i testirano):

@@ -14,7 +14,7 @@ Izvor: zadaci u `materijali/kolokvijumi/` (IR "K" 2019–2022, SI K1 2010–2020
 |---|---|---|---|
 | 22.11.2019. | Rekonstruisati LR(0) automat iz potisne i kontrolne tabele, naći gramatiku, FOLLOW i SLR(1) tabelu | Regularni izraz `(a\|b\|ε)*d(c*d)+` → Tompson → minimalni DKA, pa gramatika | Gramatika sa levom rekurzijom: FIRST/FOLLOW, transformacija u LL(1), parser rekurzivnim spustom za `<A>` |
 | nadoknada 22.1.2021. | Konačni procesor (DKA sa akcijama) koji računa izraz sa `+ - * /`, bez prioriteta, sleva nadesno | Gramatika `S→fAf, A→cB, B→fSc\|ε`: izvođenje, LR(0) automat i tabela, SLR(1) tabela, konflikti | — |
-| nadoknada 12.2.2021. | Atributi za gramatiku polinoma (nasleđeni `x`, sintetizovana vrednost) | Potisni automat za niz celih brojeva deljivih sa 4 u binarnom zapisu, razdvojenih zarezom | — |
+| nadoknada 12.2.2021. (varijanta u PDF-u; sken iste nadoknade ima LALR vrstu ▽ umesto toga) | Atributi za gramatiku polinoma (nasleđeni `x`, sintetizovana vrednost) | Potisni automat za niz celih brojeva deljivih sa 4 u binarnom zapisu, razdvojenih zarezom | — |
 | 26.11.2021. | (a) Postupak za zvezdasto zatvaranje determinističkog automata, (b) primena na M1, (c) minimizacija particionom metodom | Gramatika za niz izraza sa `+ - *` i novim desno asocijativnim `#` (prioritet između), stablo izvođenja | LALR(1) automat i tabela za `S→AA, A→AaAb\|c\|d`, stek i panic mode oporavak sa sigurnim simbolima |
 
 ## Zadaci po godinama (SI K1, isto gradivo prvog dela)
@@ -51,7 +51,7 @@ Izvor: zadaci u `materijali/kolokvijumi/` (IR "K" 2019–2022, SI K1 2010–2020
 - Najverovatnije tri zadatka iz: (1) regex/automat/minimizacija, (2) gramatika ili potisni automat, (3) LR(0)/SLR(1)/LALR(1) ili LL(1)/rekurzivni spust. To se poklapa sa gradivom do top-down parsiranja (P08/V6).
 - Uvežbaj mehanički: metodu pozicija, Tompsona, particionu minimizaciju, konstrukciju LR(0) automata i SLR/LALR tabele, FIRST/FOLLOW, LL(1) transformaciju (eliminacija leve rekurzije, faktorizacija).
 - Atributivne gramatike i sintaksno-upravljano prevođenje su van prošlogodišnjeg obima (P7/P7a), ali su se pojavile u starijem IR K (feb 2021). Ostavi za kraj.
-- Rešenja: `Resenje_*.pdf` su skenirani (20–40 MB, bez teksta). Pročitaj ih kad budeš sam rešio odgovarajući zadatak i uporedi.
+- Rešenja: `Resenje_*.pdf` su skenirana studentska rešenja (ne zvanična). Pročitao sam ih i poredio sa beleškama, vidi [poredjenje-sa-skeniranim-resenjima.md](poredjenje-sa-skeniranim-resenjima.md). Možeš ih koristiti da uporediš sopstvena rešenja.
 
 ## Stare K koje još fale
 

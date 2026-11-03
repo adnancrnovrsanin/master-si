@@ -204,3 +204,29 @@ Blokovi: A = {A}, B = {B, D}, C = {C}. Rezultat (provereno nad svim rečima {0,1
 - **SI K1** (isto gradivo): 2010/11 minDKA za binarne brojeve deljive sa 4; 2011/12 deljivi sa 8 (RI, Tompson, DKA); 2015/16 operacije nad DKA (unija sa komplementom) + minimizacija i metoda pozicija + Tompson; 2016/17 metoda pozicija + minimizacija; 2017/18 poništivost/prva/poslednja/sledeća pozicija → KA, ekvivalencija, NKA→DKA; 2019/20 `b(a|(bc)*)+` metodom pozicija; 2020/21 RI za skup prirodnih brojeva u vitičastim zagradama + metoda pozicija.
 - Vežbe (Cas 2) pominju i zadatke sa ispita: septembar 2017 zad. 1 (`A*(B+|(CA*))D⊣`, metoda pozicija) i jul 2023 zad. 2 (`(a|ε)+((a|b)*c)*⊣`).
 - **Verovatnoća za 28.11.:** vrlo visoka, ovo je najčešći zadatak. Vežbaj metodu pozicija (najbrža) i Tompsona.
+
+## Dodatak: skup prirodnih brojeva u vitičastim zagradama (SI K1 2020/21, zadatak 2)
+
+Zadatak: regularni izraz za skup prirodnih brojeva (celobrojne konstante > 0): prazan skup je `{}`, inače brojevi odvojeni zarezima, npr. `{}`, `{1}`, `{23, 10, 1590}`; zatim DKA metodom pozicija.
+
+Rešenje (po skeniranom studentskom rešenju, proveren skriptom): uvedi klase `d = [0-9]`, `b = [1-9]`, `Num = b d*`. Izraz: `{ ( Num (, Num)* | ε ) } ─┤`, odnosno `{ ( b d* (, b d*)* | ε ) } ─┤`.
+
+Pozicije: 1 `{`, 2 `b`, 3 `d`, 4 `,`, 5 `b`, 6 `d`, 7 `}`, 8 `─┤`. Poništivo je samo `ε`, `prva(koren) = {1}`. Sledeća pozicija:
+
+| pozicija | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|
+| sledeća | {2,7} | {3,4,7} | {3,4,7} | {5} | {4,6,7} | {4,6,7} | {8} | ∅ |
+
+DKA (stanje = skup pozicija; prihvata ako sadrži poziciju 8):
+
+| stanje | `{` | `b` | `d` | `,` | `}` | prihvata |
+|---|---|---|---|---|---|---|
+| S1 = {1} | S2 | | | | | ne |
+| S2 = {2,7} | | S3 | | | S4 | ne |
+| S3 = {3,4,7} | | | S3 | S5 | S4 | ne |
+| S4 = {8} | | | | | | da |
+| S5 = {5} | | S6 | | | | ne |
+| S6 = {4,6,7} | | | S6 | S5 | S4 | ne |
+
+Ovo je ono što se traži (minimizacija nije tražena). Particionom metodom se vidi da su S3 i S6 ekvivalentni (isto ponašanje na `d`, `,` i `}`), pa je minimalan DKA sa 5 stanja. Napomena: `b` i `d` se preklapaju (cifre 1–9 su oba), pa se pri izvođenju sekvence stanje prati kao skup ili se prvo odluči na kojoj poziciji je cifra (prva cifra broja je `b`, ostale `d`).
+
