@@ -38,6 +38,7 @@ Studenti kažu da je ove godine prva kolokvijumska nedelja dve nedelje kasnije n
 ## Bodovanje (IR)
 
 - Projekat: max 40 poena, obavezan, individualan, usmeno se brani. Minimum 20 poena za izlazak na ispit.
+  - **Rok je januarski, ne novembarski** (provereno 4.11.2026): prošlogodišnja postavka za januarsko-februarski rok objavljena je 31.12.2025. na `Domaci.html`; za 2026/27 još nije objavljena. Odbrana je uslov za izlazak na ispit i organizuje se u svakom roku. Dakle projekat ne odlaže kolokvijum K (28.11.), ali je obiman (kompajler za Mikrojava) — realan rad je decembar.
 - Ispit: 60 poena, pokriva celo gradivo.
 - Kolokvijum: 30 poena. Uzima se bolja varijanta:
   - sa kolokvijumom: `P + K + ispit/2`

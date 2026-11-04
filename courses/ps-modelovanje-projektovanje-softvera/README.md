@@ -14,7 +14,7 @@ Obaveštenje sa sajta (3.11.2026.): vežbe te nedelje su u računarskim salama, 
 - K1 20%: projektni uzorci (design patterns)
 - K2 20%: UML modelovanje
 - Pismeni ispit 30%
-- Projekat 30%, opciono, brani se u januarskom, februarskom ili avgustovskom roku
+- Projekat 30%, opciono, brani se u januarskom, februarskom ili avgustovskom roku. Na sajtu je 4.11.2026. još stajala samo postavka 2024/25 („važi od januarskog roka 2025"), pa projekat ne odlaže K1. Prošle godine je postavka objavljena 3.11.2024 — očekuj je svakog dana
 - Ocena: `MAX(K1+K2+I+P, (K1+K2+I)*10/7)`
 
 ## Šta ulazi u K1

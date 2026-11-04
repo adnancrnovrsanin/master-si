@@ -12,6 +12,7 @@
 
 - K1 25%, K2 25%, ispit 30%
 - Projekat (domaći zadaci) opcioni 20%, može se zameniti teorijskim pitanjima na ispitu
+  - Brane se u toku semestra; 2025/26 rokovi su bili DZ1 22.12.2025., DZ2 29.1.2026., DZ3 26.2.2026. (provereno 4.11.2026). Za 2026/27 još nisu objavljeni — ne padaju pre K1 (25.11.), realno je decembar–februar.
 - Za prolaz > polovina ukupnih poena, min. 51 od 100
 
 ## Šta ulazi u K1
